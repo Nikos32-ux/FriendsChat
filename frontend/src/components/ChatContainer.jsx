@@ -166,7 +166,7 @@ const ChatContainer = ({ selectedUser, setSelectedUser, currentUser, socket, las
   const closePreview = () => setPreview(null);
 
   return (
-    <div className={`flex flex-col w-full h-full`}>
+    <div className={`flex flex-col h-full w-full overflow-hidden`}>
       {/* Chat header */}
       <Header
         closeTab={closeTab}
