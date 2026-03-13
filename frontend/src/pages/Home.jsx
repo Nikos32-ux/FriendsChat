@@ -34,7 +34,7 @@ const Home = () => {
   return (
     <div className="h-[100dvh] w-screen bg-gradient-to-b from-purple-700 via-blue-800 to-black flex ">
       <div className=" h-full backdrop-blur-2xl bg-white/10 w-full">
-        <div className={`flex overflow-hidden bg-gray-900/50 h-full mx-auto shadow-md ${selectedUser ? "force-chat-width" : "force-sidebar-width"}`}>
+        <div className={`flex overflow-hidden bg-gray-900/50 h-full mx-auto w-full md:w-auto shadow-md ${selectedUser ? "force-chat-width" : "force-sidebar-width"}`}>
           <div className={`border-r border-yellow-400 ${selectedUser ? "hidden md:block md:w-[350px]" : "w-full"}`}>
             <Sidebar
               onlineUsers={onlineUsers}

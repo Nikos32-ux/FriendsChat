@@ -59,7 +59,7 @@
     onlineUsers.add(userId);
     
     socket.on("users-online-list",()=>{
-      socket.emit("update-users-list", Array.from(onlineUsers));
+      io.emit("update-users-list", Array.from(onlineUsers));
     })
     
     handleRegisteredSockets(socket, onlineUsers, io, userId);
